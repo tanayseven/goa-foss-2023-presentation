@@ -1,0 +1,345 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Typing in Indian languages in Linux | by Tanay PrabhuDesai</title>
+    <meta
+      name="description"
+      content="Talk on typing in Indian languages for GoaFOSS 2023"
+    />
+    <meta name="author" content="Tanay PrabhuDesai" />
+    <link href="css/slides.css" rel="stylesheet" />
+  </head>
+
+  <body class="impress-not-supported">
+    <div class="fallback-message">
+      <p>
+        Your browser <b>doesn't support the features required</b> by impress.js,
+        so you are presented with a simplified version of this presentation.
+      </p>
+      <p>
+        For the best experience please use the latest <b>Chrome</b>,
+        <b>Safari</b> or <b>Firefox</b> browser.
+      </p>
+    </div>
+
+    <div id="impress" data-transition-duration="2000">
+      <div
+        id="intro-english"
+        class="step slide title"
+        data-x="0"
+        data-y="0"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        <div>
+          <h1>Typing in Indian languages in Linux<h1>
+          <hr />
+          <h2>- Tanay PrabhuDesai</h2>
+          <h3>@ GoaFOSS 2023</h3>
+        </div>
+      </div>
+
+      <div
+        id="intro-hindi"
+        class="step slide title"
+        data-x="2000"
+        data-y="0"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        <div>
+          <h1>भारतिय भशाओं में टाईप कैसे करें<h1>
+          <hr />
+          <h2>- तनय प्रभु देसाई</h2>
+          <h3>@ GoaFOSS 2023</h3>
+        </div>
+      </div>
+
+      <div
+        id="why"
+        class="step"
+        data-x="500"
+        data-y="1700"
+        data-z="0"
+        data-scale="3"
+        style="pointer-events: none"
+      >
+        <h2>Why type in Indian languages?</h2>
+        <img src="images/languages-spoken-in-india-percentage.svg" width="1000px" />
+      </div>
+
+      <div
+        id="linux-localization"
+        class="step"
+        data-x="0"
+        data-y="6000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        <h2>The need for localization in Linux</h2>
+        <div>
+          <ol>
+            <li>Reach more (wider) audience</li>
+            <li>Language Accessibility</li>
+            <li>Cultural adaptation</li>
+            <li>User Experience (UX)</li>
+            <li>Government and Education</li>
+            <li>Documentation and Support</li>
+          </ol>
+        </div>
+      </div>
+
+      <div
+        id="qwerty"
+        class="step"
+        data-x="0"
+        data-y="8000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        <h2>The problem that we have</h2>
+        <img src="images/keyboard-querty-us.png" width="700px" />
+      </div>
+
+      <div
+        id="types-of-writing-systems"
+        class="step"
+        data-x="0"
+        data-y="10000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        <h2>Types of writing systems that exists</h2>
+        <ol>
+          <li>Logographs</li>
+          <li>Syllabaries</li>
+          <li>Alphabets</li>
+          <li>Abjads</li>
+          <li>Abugidas</li>
+        </ol>
+      </div>
+
+      <div
+        id="logograph"
+        class="step"
+        data-x="0"
+        data-y="12000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        <h2>Logograph / Logosyllabary</h2>
+        <hr />
+        <p>𓈖𓆓𓇛𓅓𓏜𓆤 𓏏𓏌 𓏏𓈖 - (This honey is sweet)</p>
+        <p>木 - (Mu) 火 - (Huǒ) 門 - (Mén) [Tree Fire Door]</p>
+      </div>
+
+      <div
+        id="syllabaries"
+        class="step"
+        data-x="0"
+        data-y="14000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Syllabaries =========== こんにちは、さくら (Kon'nichiwa, sakura) Hello
+        Sakura
+      </div>
+
+      <div
+        id="alphabets"
+        class="step"
+        data-x="0"
+        data-y="16000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Alphabets ========= Γεια πώς είσαι - (Geia pós eísai) Hello, how are you
+        Olá, como vai Привет, как дела - (Privet, kak dela)
+      </div>
+
+      <div
+        id="abjads"
+        class="step"
+        data-x="0"
+        data-y="18000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Abjads ====== مرحبًا - (mrhban) سلام - (salam) שָׁלוֹם - (shalom)
+      </div>
+
+      <div
+        id="abugidas"
+        class="step"
+        data-x="0"
+        data-y="20000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Abugidas ======== आपका क्या नाम है? તમારું નામ શું છે? - (Tamāruṁ nāma
+        śuṁ chē?) உங்கள் பெயர் என்ன? - (Uṅkaḷ peyar eṉṉa?)
+      </div>
+
+      <div
+        id="devanagri-unicode-typing"
+        class="step"
+        data-x="0"
+        data-y="22000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Typing with unicodes ==================== .. image::
+        images/devanagri-unicode-block.png
+      </div>
+
+      <div
+        id="japanese-scripts"
+        class="step"
+        data-x="0"
+        data-y="24000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        How the Japanese type using QWERTY keyboard
+        =========================================== Three scripts - Hiragana -
+        Katakana - Kanji (not necessary) So how do they type it?
+      </div>
+
+      <div
+        id="japanese-keystrokes"
+        class="step"
+        data-x="0"
+        data-y="26000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Keystrokes that map to the sound (In Japanese)
+        ============================================== さ = sa く= ku ら = ra
+        Sakura = さくら さ = sa よ = yo な = na ら = ra Sayonara = さよなら こ =
+        ko に = ni ち = chi わ = wa Konichiwa = こにちわ
+      </div>
+
+      <div
+        id="abugida-difference"
+        class="step"
+        data-x="0"
+        data-y="28000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        How different are Abugidas? =========================== Abugidas are
+        built upon vowel diacritics ---------------------------------------- ..
+        image:: images/vowel-diacritics-devanagri.png
+      </div>
+
+      <div
+        id="ibus-installation"
+        class="step"
+        data-x="0"
+        data-y="30000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Introduction to IBus and m17n ============================= :: # pacman
+        -S ibus ibus-m17n # apt install ibus ibus-m17n
+      </div>
+
+      <div
+        id="ibus-setup"
+        class="step"
+        data-x="0"
+        data-y="32000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Setting it up ============= .. image:: images/ibus-setup.png
+      </div>
+
+      <div
+        id="language-support"
+        class="step"
+        data-x="0"
+        data-y="34000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Support for different language and input types
+        ============================================== .. image::
+        images/input-method-languages.png
+      </div>
+
+      <div
+        id="live-demo"
+        class="step"
+        data-x="0"
+        data-y="36000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Live demo of IBus =================
+      </div>
+
+      <div
+        id="potential-autocomplete-support"
+        class="step"
+        data-x="0"
+        data-y="38000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Potential autocomplete support ==============================
+      </div>
+
+      <div
+        id="why-impress-js"
+        class="step"
+        data-x="0"
+        data-y="40000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        Why I chose Impress.js ====================== - No proper support for
+        custom fonts - Can’t load SVG images - Lame animations - No version
+        control and sharing via Github
+      </div>
+
+      <div
+        id="conclusion"
+        class="step"
+        data-x="0"
+        data-y="42000"
+        data-z="0"
+        data-scale="1"
+        style="pointer-events: none"
+      >
+        <h1>Thank you! Questions?</h1>
+      </div>
+      <div id="overview" class="step" data-x="700" data-y="100" data-z="1000" data-scale="1" style="pointer-events: none;"></div>
+    </div>
+
+    <script type="text/javascript" src="js/impress.js"></script>
+    <script>
+      impress().init();
+    </script>
+  </body>
+</html>
