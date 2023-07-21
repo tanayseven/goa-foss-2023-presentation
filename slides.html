@@ -24,8 +24,8 @@
     </div>
 
     <div id="impress" data-transition-duration="2000">
-      <div id="overview" class="step" data-x="1000" data-y="1000" data-z="5000" data-scale="1" style="pointer-events: none;"></div>
-      
+      <div id="overview-start" class="step" data-x="1000" data-y="1000" data-z="5000" data-scale="1" style="pointer-events: none;"></div>
+
       <div
         id="intro-english"
         class="step slide title"
@@ -56,7 +56,7 @@
         style="pointer-events: none"
       >
         <div>
-          <h1>भारतिय भशाओं में लीनक्स पे टाईप कैसे करते है</h1>
+          <h1>भारतीय भाषाओं में लिनक्स पर टाइप कैसे करते है</h1>
           <hr />
           <h2>- तनय प्रभु देसाई</h2>
           <h3>@ GoaFOSS 2023</h3>
@@ -67,7 +67,7 @@
         id="why"
         class="step"
         data-x="1700"
-        data-y="1700"
+        data-y="1900"
         data-z="0"
         data-scale="3"
         style="pointer-events: none"
@@ -81,9 +81,9 @@
         id="linux-localization"
         class="step"
         data-x="0"
-        data-y="6000"
+        data-y="4000"
         data-z="0"
-        data-scale="1"
+        data-rotate-z="30"
         style="pointer-events: none"
       >
         <h2>The need for localization in Linux</h2>
@@ -101,26 +101,43 @@
       </div>
 
       <div
+      id="hinglish"
+      class="step"
+      data-x="2000"
+      data-y="4000"
+      data-z="0"
+      data-scale="1"
+      data-rotate-z="-30"
+      data-rotate-x="30"
+      style="pointer-events: none"
+    >
+      <img class="centered-image" src="./images/funny-chat-hinglish.jpg" width="900" />
+    </div>
+
+      <div
         id="qwerty"
         class="step"
-        data-x="0"
-        data-y="8000"
+        data-x="3000"
+        data-y="4000"
         data-z="0"
         data-scale="1"
+        data-rotate-z="30"
+        data-rotate-y="30"
         style="pointer-events: none"
       >
         <h2>The problem that we have</h2>
         <hr />
-        <img src="images/keyboard-querty-us.png" width="700" />
+        <img class="centered-image" src="images/keyboard-querty-us.png" width="1000" />
       </div>
 
       <div
         id="types-of-writing-systems"
         class="step"
-        data-x="0"
-        data-y="10000"
+        data-x="4000"
+        data-y="5000"
         data-z="0"
         data-scale="1"
+        data-rotate-z="60"
         style="pointer-events: none"
       >
         <h2>Types of writing systems that exists</h2>
@@ -137,55 +154,101 @@
       <div
         id="logograph"
         class="step"
-        data-x="0"
-        data-y="12000"
+        data-x="4500"
+        data-y="4500"
         data-z="0"
         data-scale="1"
+        data-rotate-x="30"
+        data-rotate-z="90"
         style="pointer-events: none"
       >
         <h2>Logograph / Logosyllabary</h2>
         <hr />
-        <p>𓈖𓆓𓇛𓅓𓏜𓆤 𓏏𓏌 𓏏𓈖 - (This honey is sweet)</p>
-        <p>木 - (Mu) 火 - (Huǒ) 門 - (Mén) [Tree Fire Door]</p>
+        <div>
+          <table>
+            <tr>
+              <td><span class="egyptian-text">𓈖𓆓𓇛𓅓𓏜𓆤 𓏏𓏌 𓏏𓈖 </span></td>
+              <td>This honey is sweet</td>
+            </tr>
+          </table>
+        </div>
+        <hr />
+        <div>
+          <table>
+            <tr>
+              <td>木 - (Mu | Tree)</td>
+              <td>火 - (Huǒ | Fire)</td>
+              <td>門 - (Mén | Door)</td>
+            </tr>
+          </table>
+        </div>
       </div>
 
       <div
         id="syllabaries"
         class="step"
-        data-x="0"
-        data-y="14000"
+        data-x="4500"
+        data-y="5500"
         data-z="0"
         data-scale="1"
+        data-rotate-x="120"
+        data-rotate-z="90"
         style="pointer-events: none"
       >
         <h2>Syllabaries</h2>
         <hr />
-        <p>こんにちは、さくら (Kon'nichiwa, sakura) Hello Sakura</p>
+        <div>
+          <table>
+            <tr>
+              <td>こんにちは、さくら</td>
+              <td>Kon'nichiwa, sakura</td>
+              <td>Hello Sakura</td>
+            </tr>
+          </table>
+        </div>
       </div>
 
       <div
         id="alphabets"
         class="step"
-        data-x="0"
-        data-y="16000"
-        data-z="0"
+        data-x="4500"
+        data-y="5500"
+        data-z="1000"
         data-scale="1"
+        data-rotate-x="120"
+        data-rotate-z="180"
         style="pointer-events: none"
       >
         <h2>Alphabets</h2>
         <hr />
-        <p>Γεια πώς είσαι - (Geia pós eísai) Hello, how are you</p>
-        <p>Olá, como vai</p>
-        <p>Привет, как дела - (Privet, kak dela)</p>
+        <div>
+          <table>
+            <tr>
+              <td>Γεια πώς είσαι</td><td>Geia pós eísai</td>
+            </tr>
+            <tr>
+              <td>Hello, how are you</td>
+            </tr>
+            <tr>
+              <td>Olá, como vai</td>
+            </tr>
+            <tr>
+              <td>Привет, как дела</td><td>Privet, kak dela</td>
+            </tr>
+          </table>
+        </div>
       </div>
 
       <div
         id="abjads"
         class="step"
-        data-x="0"
-        data-y="18000"
-        data-z="0"
+        data-x="5500"
+        data-y="5500"
+        data-z="1000"
         data-scale="1"
+        data-rotate-x="120"
+        data-rotate-z="180"
+        data-rotate-y="90"
         style="pointer-events: none"
       >
         <h2>Abjads</h2>
@@ -198,10 +261,13 @@
       <div
         id="abugidas"
         class="step"
-        data-x="0"
-        data-y="20000"
-        data-z="0"
+        data-x="6000"
+        data-y="5000"
+        data-z="1000"
         data-scale="1"
+        data-rotate-x="120"
+        data-rotate-z="180"
+        data-rotate-y="180"
         style="pointer-events: none"
       >
         <h2>Abugidas</h2>
@@ -215,21 +281,21 @@
         id="devanagri-unicode-typing"
         class="step"
         data-x="0"
-        data-y="22000"
-        data-z="0"
+        data-y="4000"
+        data-z="1000"
         data-scale="1"
         style="pointer-events: none"
       >
-        <h2>Typing with unicodes</h2>
+        <h2 id="typing-with-unicodes">Typing with unicodes</h2>
         <hr />
-        <img src="images/devanagri-unicode-block.png" width="800" />
+        <img class="centered-image" src="images/devanagri-unicode-block.png" width="800" />
       </div>
 
       <div
         id="japanese-scripts"
         class="step"
-        data-x="0"
-        data-y="24000"
+        data-x="6000"
+        data-y="6000"
         data-z="0"
         data-scale="1"
         style="pointer-events: none"
@@ -248,41 +314,66 @@
       <div
         id="japanese-keystrokes"
         class="step"
-        data-x="0"
-        data-y="26000"
-        data-z="0"
+        data-x="6500"
+        data-y="6000"
+        data-z="-1000"
         data-scale="1"
+        data-rotate-y="90"
         style="pointer-events: none"
       >
         <h2>Keystrokes that map to the sound (In Japanese)</h2>
         <hr />
 
         <p>
-        さ = sa く= ku ら = ra
-        <br />
-        Sakura = さくら
+          <table>
+            <tr>
+              <td>さ = sa</td>
+              <td>く= ku</td>
+              <td>ら = ra</td>
+            </tr>
+            <tr>
+              <td colspan="3">Sakura = さくら</td>
+            </tr>
+          </table>
         </p>
-
+        <hr />
         <p>
-        さ = sa よ = yo な = na ら = ra
-        <br />
-        Sayonara = さよなら
+          <table>
+            <tr>
+              <td>さ = sa</td>
+              <td>よ = yo</td>
+              <td>な = na</td>
+              <td>ら = ra</td>
+            </tr>
+            <tr>
+              <td colspan="4">Sayonara = さよなら</td>
+            </tr>
+          </table>
         </p>
-
+        <hr />
         <p>
-        こ = ko に = ni ち = chi わ = wa
-        <br />
-        Konichiwa = こにちわ
+          <table>
+            <tr>
+              <td>こ = ko</td>
+              <td>に = ni</td>
+              <td>ち = chi</td>
+              <td>わ = wa</td>
+            </tr>
+            <tr>
+              <td colspan="4">Konichiwa = こにちわ</td>
+            </tr>
+          </table>
         </p>
       </div>
 
       <div
         id="abugida-difference"
         class="step"
-        data-x="0"
-        data-y="28000"
-        data-z="0"
+        data-x="5500"
+        data-y="6000"
+        data-z="-2000"
         data-scale="1"
+        data-rotate-y="180"
         style="pointer-events: none"
       >
         <h2>How different are Abugidas?</h2>
@@ -294,55 +385,62 @@
       <div
         id="ibus-installation"
         class="step"
-        data-x="0"
-        data-y="30000"
-        data-z="0"
+        data-x="5500"
+        data-y="7000"
+        data-z="-2000"
         data-scale="1"
+        data-rotate-y="180"
         style="pointer-events: none"
       >
         <h2>Introduction to IBus and m17n</h2>
         <hr />
         <pre># pacman -S ibus ibus-m17n</pre>
+        <hr />
         <pre># apt install ibus ibus-m17n</pre>
       </div>
 
       <div
         id="ibus-setup"
         class="step"
-        data-x="0"
-        data-y="32000"
-        data-z="0"
+        data-x="6500"
+        data-y="7000"
+        data-z="-1000"
         data-scale="1"
+        data-rotate-y="90"
         style="pointer-events: none"
       >
         <h2>Setting it up</h2>
         <hr />
-        <img src="images/ibus-setup.png" width="1000" />
+        <img class="centered-image" src="images/ibus-setup.png" width="1000" />
       </div>
 
       <div
         id="language-support"
         class="step"
-        data-x="0"
-        data-y="34000"
+        data-x="6000"
+        data-y="7000"
         data-z="0"
         data-scale="1"
+        data-rotate-y="0"
         style="pointer-events: none"
       >
         <h2>Support for different language and input types</h2>
         <hr />
         <img src="images/input-method-languages.png" width="1000" />
         </div>
-        <div
+      <div
         id="live-demo"
         class="step"
-        data-x="0"
-        data-y="36000"
-        data-z="0"
-        data-scale="1"
+        data-x="6000"
+        data-y="7000"
+        data-z="1000"
+        data-scale="2"
+        data-rotate-y="60"
+        data-rotate-z="60"
         style="pointer-events: none"
       >
         <h1>Live demo of IBus</h1>
+        <hr />
         <div class="notes">
           <ul>
             <li>Start <pre>screenkey</pre> from the console screen</li>
@@ -396,7 +494,7 @@
           <div>
             <p>प्रिय तनय,</p>
             <br>
-            <p>प्रणाम।  में आपको इस शुभ अवसर पर बुलाना चहता हु कि आप जरूर आये।</p>
+            <p>प्रणाम। में आपको इस शुभ अवसर पर बुलाना चहता हु कि आप जरूर आये।</p>
             <br>
             <p>धन्यवाद,</p>
             <p>तनय प्रभु देसाई</p>
@@ -407,44 +505,73 @@
       <div
         id="potential-autocomplete-support"
         class="step"
-        data-x="0"
-        data-y="38000"
-        data-z="0"
-        data-scale="1"
+        data-x="6000"
+        data-y="7000"
+        data-z="5000"
+        data-scale="2"
+        data-rotate-y="90"
+        data-rotate-z="90"
         style="pointer-events: none"
       >
         <h2>Potential autocomplete support</h2>
+        <hr />
+        <video class="centered-image" width="300" autoplay muted loop>
+          <source src="./videos/hindi-typing.mp4" />
+        </video>
       </div>
   
       <div
         id="why-impress-js"
         class="step"
-        data-x="0"
-        data-y="40000"
-        data-z="0"
+        data-x="6000"
+        data-y="7000"
+        data-z="3000"
         data-scale="1"
+        data-rotate-y="90"
+        data-rotate-z="90"
         style="pointer-events: none"
       >
         <h2>Why I chose Impress.js<h2>
           <ol>
-            <li>No proper support for custom fonts</li>
-            <li>Can’t load SVG images</li>
-            <li>Lame animations</li>
-            <li>No version control and sharing via Github</li>
+            <li>Proper support for custom fonts</li>
+            <li>Load SVG images</li>
+            <li>Better animations (did you notice it was in 3D)?</li>
+            <li>Version control and sharing via Github</li>
           </ol>
       </div>
   
         <div
           id="conclusion"
           class="step"
-          data-x="0"
-          data-y="42000"
-          data-z="0"
-          data-scale="1"
+          data-x="6000"
+          data-y="7000"
+          data-z="500"
+          data-scale="0.3"
+          data-rotate-y="90"
+          data-rotate-z="90"
           style="pointer-events: none"
         >
           <h1>Thank you! Questions?</h1>
+          <hr />
+          <p>Find me anywhere on internet</p>
+          <ol>
+            <li><a href="#">twitter.com/tanayseven</a></li>
+            <li><a href="#">tanayseven.com</a></li>
+            <li><a href="#">github.com/tanayseven</a></li>
+          </ol>
         </div>
+
+        <div
+          id="overview-end"
+          class="step" 
+          data-x="6000"
+          data-y="7000"
+          data-z="1000"
+          data-scale="2"
+          data-rotate-y="60"
+          data-rotate-z="90"
+          style="pointer-events: none"
+        ></div>
       </div>
     </div>
 
