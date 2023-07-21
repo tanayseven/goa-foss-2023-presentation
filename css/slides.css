@@ -111,10 +111,12 @@ body {
 }
 ol {
   list-style: devanagri;
+  list-style-position: inside;
 }
 ,
 ul {
   list-style: circle;
+  list-style-position: inside;
 }
 blockquote,
 q {
@@ -191,6 +193,10 @@ em {
 }
 
 .impress-supported .fallback-message {
+  display: none;
+}
+
+.notes {
   display: none;
 }
 
